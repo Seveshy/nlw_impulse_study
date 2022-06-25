@@ -17,7 +17,7 @@ export function FeedbackContentStep({
   onFeedbackRestartRequested,
   onFeedbackSent
 }: FeedbackContentStepProps) {
-  const [screenshot, setSecreenshot] = useState(null);
+  const [screenshot, setSecreenshot] = useState<string | null>(null);
   const [comment, setComment] = useState("");
   const [isSendingLoading, setIsSendingLoading] = useState(false);
 
